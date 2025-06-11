@@ -1,0 +1,32 @@
+CREATE TABLE students (
+    id SERIAL PRIMARY KEY, -- Auto-incrementing unique ID for each student
+    full_name TEXT NOT NULL,
+    date_of_birth DATE NOT NULL, -- Stores dates (YYYY-MM-DD)
+    gender TEXT NOT NULL,
+    marital_status TEXT NOT NULL,
+    mobile_number TEXT NOT NULL,
+    email TEXT NOT NULL,
+    alternate_mobile_number TEXT NOT NULL,
+    preferred_communication TEXT NOT NULL,
+    highest_qualification TEXT NOT NULL,
+    institution_name TEXT NOT NULL,
+    graduation_year DATE NOT NULL, -- Stores dates
+    academic_score NUMERIC NOT NULL, -- Stores numbers with decimal precision
+    english_test_taken TEXT NOT NULL,
+    english_test_date DATE NOT NULL, -- Stores dates
+    english_overall_score NUMERIC NOT NULL, -- Stores numbers
+    listening_score NUMERIC NOT NULL, -- Stores numbers
+    reading_score NUMERIC NOT NULL, -- Stores numbers
+    writing_score NUMERIC NOT NULL, -- Stores numbers
+    speaking_score NUMERIC NOT NULL, -- Stores numbers
+    desired_countries TEXT[] NOT NULL, -- Stores a list/array of text values
+    desired_course_level TEXT NOT NULL,
+    preferred_course_field TEXT NOT NULL,
+    target_intake TEXT NOT NULL,
+    funding_source TEXT NOT NULL,
+    estimated_budget NUMERIC NOT NULL, -- Stores numbers
+    travel_history TEXT NOT NULL,
+    visa_rejections TEXT NOT NULL,
+    referral_source TEXT NOT NULL,
+    referrer_name TEXT NOT NULL
+);
